@@ -15,3 +15,25 @@
  * 
  * Submit GitHub Repo
  */
+
+//Gets the elements
+
+function addListItem(){
+    let inputText = document.getElementById("insert-to-do-item");
+    let listContainer = document.querySelector("ul");
+    
+    //Creates the List element
+    let toDoItem = document.createElement("li");
+    let itemText = document.createTextNode(inputText.value);
+    toDoItem.className = "list-item";
+
+    //Adds the list element
+    toDoItem.appendChild(itemText);
+    listContainer.appendChild(toDoItem);
+
+    inputText.value = null;
+
+    toDoItem.addEventListener("click", function(){
+        this.remove();
+    });
+}
