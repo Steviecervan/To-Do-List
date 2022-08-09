@@ -31,9 +31,9 @@ function addListItem(){
     toDoItem.appendChild(itemText);
     listContainer.appendChild(toDoItem);
 
-    inputText.value = null;
+    inputText.value = null; //Clears the input text box
 
     toDoItem.addEventListener("click", function(){
-        this.remove();
-    });
+        this.remove(); //Removes the item
+    });  
 }

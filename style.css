@@ -1,5 +1,5 @@
 html{
-    background: linear-gradient(to right, lightBlue, lightGreen);
+    background: linear-gradient(to right, lightGreen, lightblue);
     width: 100%;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -42,8 +42,8 @@ body{
     border-radius: 15px;
     justify-content: center;
 
-    padding: 10px 0px;
-    margin: 15px;
+    padding: 15px 0px 0px 0px;
+    /* margin: 15px; */
 }
 
 #insert-to-do-item{
@@ -65,14 +65,19 @@ body{
     background-color: white;
     width: 500px;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
 }
 
-#list{
+#to-do-list{
     list-style: none;   
     padding: 0;
 }
 
-.item{
+.list-item{
     background-color: rgba(0, 0, 0, 0.048);
     padding: 5px;
     margin: 15px;
@@ -80,6 +85,10 @@ body{
     border-radius: 5px;
 }
 
-.item:hover{
+.list-item:hover{
     background-color: rgba(0, 0, 0, 0.082);
 }
+
+#display-list{
+    width: 100%;
+}  
